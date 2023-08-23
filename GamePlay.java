@@ -6,6 +6,14 @@ import java.util.Scanner;
 public class GamePlay {
     static int highScore = Integer.MAX_VALUE;
     static Scanner input = new Scanner(System.in);
+    /**
+    * Runs one game of Bulls and Cows. A 4-digit number with no repeating digits is randomly generated and the user guesses numbers until
+    * they guess the correct number. Their guesses are responded to with the number of bulls (how many digits are correct and in the same
+    * place as the digits in the secret number) and the number of cows (how many digits are correct but not in the same place as the digits
+    * in the secret number). Returns a boolean: true meaning the user wants to stop the game, false meaning the user wants to play another
+    * round.
+    * @return a boolean true: the user does not want to play another game false: the user does want to play another game
+    */
    public static boolean game() {//runs one game
 
        //generate a secret number
